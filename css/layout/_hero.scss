@@ -1,0 +1,39 @@
+.section-hero {
+    // background: url('../../assets/img/hero/hero.png') no-repeat right center / contain,
+    //             url('../../assets/img/hero/hero_hand.png') no-repeat right 190%,  $color-fiord;
+
+    background-color: $color-fiord;
+    background-image: url('../../assets/img/hero/1.png');
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: top right;
+
+    .section-inner {
+        padding: 165px 0;
+    }
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 473px;
+}
+
+.hero__title {
+    margin-bottom: 41px;
+    font-size: $fs-l;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.hero__description {
+    font-size: $fs-s;
+    line-height: 19px;
+    margin-bottom: 81px;
+}
+
+.hero__title,
+.hero__description {
+    width: 423px;
+}

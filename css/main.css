@@ -490,7 +490,7 @@ body {
   margin: 0 auto;
 }
 .section-inner--narrow {
-  max-width: 1024px;
+  max-width: 1120px;
 }
 
 .section-header {
@@ -505,6 +505,96 @@ body {
 
 .header__contacts {
   margin-top: 10px;
+}
+
+.section-hero {
+  background-color: rgb(76, 87, 114);
+  background-image: url("../../assets/img/hero/1.png");
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position: top right;
+}
+.section-hero .section-inner {
+  padding: 165px 0;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 473px;
+}
+
+.hero__title {
+  margin-bottom: 41px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.hero__description {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 81px;
+}
+
+.hero__title,
+.hero__description {
+  width: 423px;
+}
+
+.btn {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  font-family: "Montserrat", "Bitstream Vera Sans Mono", "Monaco", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: rgb(26, 29, 37);
+  background-color: rgb(255, 231, 69);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  border: 2px solid rgb(255, 231, 69);
+  transition: all 0.3s ease-in-out;
+}
+.btn__icon {
+  display: flex;
+  margin-left: 21px;
+}
+.btn__icon svg:last-child {
+  position: relative;
+  left: -5px;
+}
+.btn--rounded {
+  border-radius: 100px;
+}
+.btn--quadrate {
+  border-radius: 10px;
+}
+.btn--l {
+  padding: 28px 0;
+}
+.btn--m {
+  padding: 23px 0;
+}
+.btn--s {
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+.btn:hover, .btn:focus {
+  box-shadow: 0 0 8px rgb(255, 231, 69);
 }
 
 .logo--shadowed {
@@ -554,6 +644,7 @@ body {
   justify-content: space-between;
   font-size: 16px;
   font-weight: 500;
+  line-height: 20px;
   transition: color 0.3s ease-in-out;
 }
 .contacts-link__icon {

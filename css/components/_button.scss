@@ -1,3 +1,57 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.btn {
+    @include btnReset;
+    @include montserrat;
+    @include flex(center, center);
+
+    width: 100%;
+    color: $color-shark;
+    background-color: $color-brand;
+    text-transform: uppercase;
+    font-size: $fs-m;
+    font-weight: 700;
+    line-height: 22px;
+    border: 2px solid $color-brand;
+    transition: all 0.3s ease-in-out;
+
+    &__icon {
+        display: flex;
+        margin-left: 21px;
+
+        svg {
+            &:last-child {
+                position: relative;
+                left: -5px;
+            }
+        }
+    }
+
+    &--rounded {
+        border-radius: 100px;
+    }
+
+    &--quadrate {
+        border-radius: 10px;
+    }
+
+    &--l {
+        padding: 28px 0;
+    }
+
+    &--m {
+        padding: 23px 0;
+    }
+
+    &--s {
+        padding: 10px 0;
+        font-size: $fs-s;
+        line-height: 20px;
+    }
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 0 8px $color-brand;
+    }
+}
