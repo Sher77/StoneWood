@@ -488,4 +488,99 @@ body {
   max-width: 1320px;
   width: 100%;
   margin: 0 auto;
+}
+.section-inner--narrow {
+  max-width: 1024px;
+}
+
+.section-header {
+  background-color: rgb(76, 87, 114);
+}
+.section-header .section-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 45px 0;
+}
+
+.header__contacts {
+  margin-top: 10px;
+}
+
+.logo--shadowed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 0 1px 10px rgba(255, 255, 255, 0.26), 0 4px 4px rgba(255, 255, 255, 0.26), inset 0 1px 15px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.logo--shadowed:hover, .logo--shadowed:focus {
+  box-shadow: 0 1px 10px rgba(255, 231, 69, 0.26), 0 4px 4px rgba(255, 231, 69, 0.26), inset 0 1px 15px rgba(255, 231, 69, 0.2);
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 770px;
+  padding: 21px 50px;
+  background-color: #465069;
+  border-radius: 150px;
+}
+
+.contacts__link {
+  position: relative;
+}
+.contacts__link:not(:last-child) {
+  margin-right: 40px;
+}
+.contacts__link:not(:last-child):before {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  height: 100%;
+  width: 1px;
+  content: "";
+  background-color: rgb(105, 112, 129);
+}
+
+.contacts-link {
+  font-family: "Montserrat", "Bitstream Vera Sans Mono", "Monaco", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+.contacts-link__icon {
+  margin-right: 18px;
+}
+.contacts-link:hover, .contacts-link:focus {
+  color: rgb(255, 231, 69);
+}
+
+.contacts__phones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacts__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contacts__list .contacts__link svg {
+  transition: transform 0.3s ease-in-out;
+}
+.contacts__list .contacts__link:hover svg, .contacts__list .contacts__link:focus svg {
+  transform: scale(1.1);
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 18px;
 }/*# sourceMappingURL=main.css.map */

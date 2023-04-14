@@ -17,10 +17,23 @@ $color-oslo-gray: rgb(131, 134, 141) !default; // Light text color
 $color-fiord: rgba(76, 87, 114) !default;  // Main background color
 $color-shark: rgba(26, 29, 37) !default; // Secondary background color
 $color-woodsmoke: rgba(17, 19, 22) !default; // Footer secondary background color
+$color-pale-sky: rgba(105, 112, 129) !default; // Stick color
+
+/// Font sizes
+$fs-xxs: 12px;
+$fs-xs: 14px;
+$fs-s: 16px;
+$fs-m: 18px;
+$fs-l: 22px;
+$fs-x: 32px;
+$fs-xl: 35px;
+$fs-xxl: 44px;
+
 
 
 /// Container's maximum width
 $max-width: 1320px !default;
+$max-width--narrow: 1024px !default;
 
 
 /// Breakpoints map
